@@ -6,9 +6,9 @@ const spaceGrotesk = Space_Grotesk({ subsets: ['latin'] })
 const Home = () => {
   return (
     <main className={`relative ${spaceGrotesk.className}`}>
-      <div className='absolute w-full h-full sm:bg-[url("/assets/spiral-chaos.svg")] sm:bg-no-repeat sm:bg-cover sm:bg-center sm:animate-[pulse_5s_ease-in-out_infinite]'></div>
-      <div className='min-h-screen sm:flex sm:items-center sm:backdrop-blur-lg'>
-        <section className='bg-gradient-to-b from-white to-[#EBEBEB] py-10 h-[896px] mx-auto sm:rounded-3xl sm:w-[512px] sm:drop-shadow-[0_35px_35px_rgba(0,0,0,1)]'>
+      <div className='absolute w-full h-full bg-[url("https://res.cloudinary.com/drgfavmlw/image/upload/v1715205817/Spiral-Chaos_wexgby.svg")] bg-no-repeat bg-cover bg-center animate-[pulse_5s_ease-in-out_infinite]'></div>
+      <div className='min-h-screen flex items-center backdrop-blur-lg'>
+        <section className='w-full bg-gradient-to-b from-white to-[#EBEBEB] py-10 h-[896px] mx-auto sm:rounded-3xl sm:w-[512px] sm:drop-shadow-[0_35px_35px_rgba(0,0,0,1)]'>
           <div className='px-9'>
             <div className='flex items-center justify-between'>
               <h3 className='w-9/12 text-4xl text-black font-bold'>
@@ -53,7 +53,7 @@ const Home = () => {
                   <path
                     d='M2.5543 23.755C1.19008 11.0677 11.1315 0 23.8919 0H185.108C197.868 0 207.81 11.0677 206.446 23.755L201.061 73.8337C199.889 84.7352 190.688 93 179.723 93H29.2768C18.3125 93 9.11131 84.7352 7.93911 73.8337L2.5543 23.755Z'
                     fill='url(#paint0_linear_4_1327)'
-                    fill-opacity='0.6'
+                    fillOpacity='0.6'
                   />
                   <path
                     d='M23.8919 0.5H185.108C197.571 0.5 207.281 11.3099 205.949 23.7016L200.564 73.7803C199.419 84.4277 190.432 92.5 179.723 92.5H29.2768C18.5679 92.5 9.58113 84.4277 8.43624 73.7803L3.05144 23.7015C1.719 11.3099 11.4288 0.5 23.8919 0.5Z'
@@ -68,8 +68,8 @@ const Home = () => {
                     width='252.142'
                     height='141'
                     filterUnits='userSpaceOnUse'
-                    color-interpolation-filters='sRGB'>
-                    <feFlood flood-opacity='0' result='BackgroundImageFix' />
+                    colorInterpolationFilters='sRGB'>
+                    <feFlood floodOpacity='0' result='BackgroundImageFix' />
                     <feGaussianBlur in='BackgroundImageFix' stdDeviation='12' />
                     <feComposite
                       in2='SourceAlpha'
@@ -183,7 +183,7 @@ const Home = () => {
                   <path
                     d='M12 8.20996V13.21'
                     stroke='#292D32'
-                    stroke-width='1.5'
+                    strokeWidth='1.5'
                     strokeMiterlimit='10'
                     strokeLinecap='round'
                     strokeLinejoin='round'
