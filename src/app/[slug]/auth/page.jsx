@@ -1,9 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { notFound } from 'next/navigation'
 
 import HeaderLogo from '@/components/header-logo'
 
-export default function Home() {
+const Auth = ({ params: { slug } }) => {
+  if (slug !== 'admin' && slug !== 'patron') return notFound()
+
   return (
     <main className='bg-forest-green'>
       <section className='min-h-screen drop-shadow-[0_35px_35px_rgba(34,58,40,1)]'>
@@ -90,3 +93,5 @@ export default function Home() {
     </main>
   )
 }
+
+export default Auth
