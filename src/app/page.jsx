@@ -12,7 +12,7 @@ const Home = () => {
           <div className='px-9'>
             <div className='flex items-center justify-between'>
               <h3 className='w-9/12 text-4xl text-black font-bold'>
-                De Don
+                Product Name
               </h3>
               <button className='w-14 h-14 border-4 border-[#F3F3F3] bg-neutral-50 rounded-t-full rounded-b-full'>
                 <svg
