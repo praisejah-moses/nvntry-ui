@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <main className={`relative ${spaceGrotesk.className}`}>
       <div className='absolute w-full h-full bg-[url("https://res.cloudinary.com/drgfavmlw/image/upload/v1715205817/Spiral-Chaos_wexgby.svg")] bg-no-repeat bg-cover bg-center animate-[pulse_5s_ease-in-out_infinite]'></div>
-      <div className='min-h-screen flex items-center backdrop-blur-lg'>
+      <div className='min-h-screen flex items-center -webkit-backdrop-blur'>
         <section className='w-full bg-gradient-to-b from-white to-[#EBEBEB] py-10 mx-auto md:rounded-3xl sm:w-[512px] sm:drop-shadow-[0_35px_35px_rgba(0,0,0,1)]'>
           <div className='px-9'>
             <div className='flex items-center justify-between'>
@@ -178,9 +178,8 @@ const Home = () => {
             </div>
           </div>
 
-          {/* update btn mobile */}
-          <div className='h-[94px] rounded-[60px] bg-white mt-5 mx-9 p-2 flex items-center md:hidden'>
-            <p className='font-bold text-xl text-black mx-auto'>
+          <div className='px-9'>
+            <button className='w-full h-[94px] rounded-[60px] bg-white mt-5 p-2 font-bold text-xl text-black'>
               Update{' '}
               <span>
                 <svg
@@ -215,47 +214,7 @@ const Home = () => {
                   />
                 </svg>
               </span>
-            </p>
-          </div>
-
-          {/* update btn bigger screens */}
-          <div className='h-[94px] rounded-[60px] bg-white mt-5 mx-9 p-2 md:flex items-center hidden'>
-            <p className='font-bold text-xl text-black mx-auto'>
-              Update{' '}
-              <span>
-                <svg
-                  className='inline'
-                  width='24'
-                  height='24'
-                  viewBox='0 0 24 24'
-                  fill='none'
-                  xmlns='http://www.w3.org/2000/svg'>
-                  <path
-                    d='M14.5 10.6499H9.5'
-                    stroke='#292D32'
-                    strokeWidth='1.5'
-                    strokeMiterlimit='10'
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                  />
-                  <path
-                    d='M12 8.20996V13.21'
-                    stroke='#292D32'
-                    strokeWidth='1.5'
-                    strokeMiterlimit='10'
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                  />
-                  <path
-                    d='M16.8199 2H7.17995C5.04995 2 3.31995 3.74 3.31995 5.86V19.95C3.31995 21.75 4.60995 22.51 6.18995 21.64L11.0699 18.93C11.5899 18.64 12.4299 18.64 12.9399 18.93L17.8199 21.64C19.3999 22.52 20.6899 21.76 20.6899 19.95V5.86C20.6799 3.74 18.9499 2 16.8199 2Z'
-                    stroke='#292D32'
-                    strokeWidth='2'
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                  />
-                </svg>
-              </span>
-            </p>
+            </button>
           </div>
         </section>
       </div>

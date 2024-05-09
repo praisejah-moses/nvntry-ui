@@ -16,6 +16,10 @@
   }
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -48,4 +52,9 @@ body {
   clip-path: path(
     'M1.25359e-06 105C-1.29813e-06 78.2491 14.4999 72.7813 44 52.5C71.4999 36 88 1.04939e-06 88 1.04939e-06L88 210C88 210 73.5001 178.143 44 157.5C14.4999 136.857 3.80531e-06 131.751 1.25359e-06 105Z'
   );
+}
+
+.-webkit-backdrop-blur {
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
 }
