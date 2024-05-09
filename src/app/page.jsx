@@ -8,13 +8,14 @@ const Home = () => {
     <main className={`relative ${spaceGrotesk.className}`}>
       <div className='absolute w-full h-full bg-[url("https://res.cloudinary.com/drgfavmlw/image/upload/v1715205817/Spiral-Chaos_wexgby.svg")] bg-no-repeat bg-cover bg-center animate-[pulse_5s_ease-in-out_infinite]'></div>
       <div className='min-h-screen flex items-center backdrop-blur-lg'>
-        <section className='w-full bg-gradient-to-b from-white to-[#EBEBEB] py-10 h-[896px] mx-auto sm:rounded-3xl sm:w-[512px] sm:drop-shadow-[0_35px_35px_rgba(0,0,0,1)]'>
+        <section className='w-full bg-gradient-to-b from-white to-[#EBEBEB] py-10 mx-auto md:rounded-3xl sm:w-[512px] sm:drop-shadow-[0_35px_35px_rgba(0,0,0,1)]'>
           <div className='px-9'>
             <div className='flex items-center justify-between'>
-              <h3 className='w-9/12 text-4xl text-black font-bold'>
-                Product Name
-              </h3>
-              <button className='w-14 h-14 border-4 border-[#F3F3F3] bg-neutral-50 rounded-t-full rounded-b-full'>
+              <div className='w-9/12'>
+                <h3 className='text-4xl text-black font-bold'>Product Name</h3>
+                <h4 className='text-neutral-400'>Patron Name</h4>
+              </div>
+              <button className='w-14 h-14 border-4 border-red-50 bg-red-100 rounded-t-full rounded-b-full'>
                 <svg
                   className='mx-auto'
                   width='24'
@@ -23,15 +24,22 @@ const Home = () => {
                   fill='none'
                   xmlns='http://www.w3.org/2000/svg'>
                   <path
-                    d='M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z'
-                    stroke='#292D32'
+                    d='M8.90002 7.55999C9.21002 3.95999 11.06 2.48999 15.11 2.48999H15.24C19.71 2.48999 21.5 4.27999 21.5 8.74999V15.27C21.5 19.74 19.71 21.53 15.24 21.53H15.11C11.09 21.53 9.24002 20.08 8.91002 16.54'
+                    stroke='#f87171'
+                    strokeWidth='1.5'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                  />
+                  <path
+                    d='M15 12H3.62'
+                    stroke='#f87171'
                     strokeWidth='2'
                     strokeLinecap='round'
                     strokeLinejoin='round'
                   />
                   <path
-                    d='M20.5899 22C20.5899 18.13 16.7399 15 11.9999 15C7.25991 15 3.40991 18.13 3.40991 22'
-                    stroke='#292D32'
+                    d='M5.85 8.6499L2.5 11.9999L5.85 15.3499'
+                    stroke='#f87171'
                     strokeWidth='2'
                     strokeLinecap='round'
                     strokeLinejoin='round'
@@ -39,7 +47,7 @@ const Home = () => {
                 </svg>
               </button>
             </div>
-            <div className='relative w-64 h-96 left-1/2 -translate-x-1/2 mt-10'>
+            <div className='relative w-64 h-96 md:hidden left-1/2 -translate-x-1/2 mt-10'>
               <Image src='/assets/product.png' alt='Product image' fill />
 
               <svg
@@ -137,10 +145,19 @@ const Home = () => {
               </svg>
             </div>
 
-            <div>
-              <span className='text-neutral-500 font-bold text-5xl transition-all duration-200'>
-                15
-              </span>
+            <div className='relative flex flex-col justify-center items-center'>
+              <Image
+                className='hidden md:block absolute -z-10 animate-[pulse_5s_ease-in-out_infinite] blur-md transition-all duration-200'
+                src='/assets/100-percent.svg'
+                alt=''
+                width={112}
+                height={112}
+              />
+              <div className='w-[8rem] h-[8rem] md:backdrop-blur-sm rounded-full overflow-clip flex justify-center items-center'>
+                <span className='text-neutral-500 font-bold text-5xl transition-all duration-200'>
+                  15
+                </span>
+              </div>
             </div>
 
             <div className='w-[88px] h-[210px] bg-gradient-to-l from-transparent to-white flex justify-center items-center right-btn'>
@@ -161,7 +178,48 @@ const Home = () => {
             </div>
           </div>
 
-          <div className='h-[94px] rounded-[60px] bg-white mt-5 mx-9 p-2 flex items-center justify-'>
+          {/* update btn mobile */}
+          <div className='h-[94px] rounded-[60px] bg-white mt-5 mx-9 p-2 flex items-center md:hidden'>
+            <p className='font-bold text-xl text-black mx-auto'>
+              Update{' '}
+              <span>
+                <svg
+                  className='inline'
+                  width='24'
+                  height='24'
+                  viewBox='0 0 24 24'
+                  fill='none'
+                  xmlns='http://www.w3.org/2000/svg'>
+                  <path
+                    d='M14.5 10.6499H9.5'
+                    stroke='#292D32'
+                    strokeWidth='1.5'
+                    strokeMiterlimit='10'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                  />
+                  <path
+                    d='M12 8.20996V13.21'
+                    stroke='#292D32'
+                    strokeWidth='1.5'
+                    strokeMiterlimit='10'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                  />
+                  <path
+                    d='M16.8199 2H7.17995C5.04995 2 3.31995 3.74 3.31995 5.86V19.95C3.31995 21.75 4.60995 22.51 6.18995 21.64L11.0699 18.93C11.5899 18.64 12.4299 18.64 12.9399 18.93L17.8199 21.64C19.3999 22.52 20.6899 21.76 20.6899 19.95V5.86C20.6799 3.74 18.9499 2 16.8199 2Z'
+                    stroke='#292D32'
+                    strokeWidth='2'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                  />
+                </svg>
+              </span>
+            </p>
+          </div>
+
+          {/* update btn bigger screens */}
+          <div className='h-[94px] rounded-[60px] bg-white mt-5 mx-9 p-2 md:flex items-center hidden'>
             <p className='font-bold text-xl text-black mx-auto'>
               Update{' '}
               <span>
