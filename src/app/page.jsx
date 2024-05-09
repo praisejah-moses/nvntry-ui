@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <main className={`relative ${spaceGrotesk.className}`}>
       <div className='absolute w-full h-full bg-[url("https://res.cloudinary.com/drgfavmlw/image/upload/v1715205817/Spiral-Chaos_wexgby.svg")] bg-no-repeat bg-cover bg-center animate-[pulse_5s_ease-in-out_infinite]'></div>
-      <div className='min-h-screen flex items-center -webkit-backdrop-blur'>
+      <div className='min-h-screen flex items-center -webkit-backdrop-blur-16'>
         <section className='w-full bg-gradient-to-b from-white to-[#EBEBEB] py-10 mx-auto md:rounded-3xl sm:w-[512px] sm:drop-shadow-[0_35px_35px_rgba(0,0,0,1)]'>
           <div className='px-9'>
             <div className='flex items-center justify-between'>
