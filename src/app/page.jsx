@@ -50,7 +50,7 @@ const Home = () => {
             <div className='relative w-64 h-96 md:hidden left-1/2 -translate-x-1/2 mt-10'>
               <Image src='/assets/product.png' alt='Product image' fill />
 
-              <svg
+              {/* <svg
                 className='absolute z-20 -bottom-10 left-1/2 -translate-x-1/2 -webkit-backdrop-blur-12 shape'
                 width='209'
                 height='93'
@@ -110,6 +110,43 @@ const Home = () => {
                     gradientUnits='userSpaceOnUse'>
                     <stop stopColor='white' />
                     <stop offset='1' stopColor='white' stopOpacity='0.26' />
+                  </linearGradient>
+                </defs>
+              </svg> */}
+
+              <svg
+                className='absolute z-20 -bottom-10 left-1/2 -translate-x-1/2 -webkit-backdrop-blur-12 shape'
+                width='205'
+                height='93'
+                viewBox='0 0 205 93'
+                fill='none'
+                xmlns='http://www.w3.org/2000/svg'>
+                <path
+                  d='M21.8919 0.5H183.108C195.571 0.5 205.281 11.3099 203.949 23.7016L198.564 73.7803C197.419 84.4277 188.432 92.5 177.723 92.5H27.2768C16.5679 92.5 7.58113 84.4277 6.43624 73.7803L1.05144 23.7015C-0.281002 11.3099 9.42885 0.5 21.8919 0.5Z'
+                  fill='url(#paint0_linear_4_1328)'
+                  fill-opacity='0.6'
+                  stroke='url(#paint1_linear_4_1328)'
+                />
+                <defs>
+                  <linearGradient
+                    id='paint0_linear_4_1328'
+                    x1='103'
+                    y1='93'
+                    x2='77.1787'
+                    y2='-145.311'
+                    gradientUnits='userSpaceOnUse'>
+                    <stop stopColor='white' />
+                    <stop offset='1' stopColor='white' stopOpacity='0.53' />
+                  </linearGradient>
+                  <linearGradient
+                    id='paint1_linear_4_1328'
+                    x1='102.5'
+                    y1='0'
+                    x2='102.5'
+                    y2='93'
+                    gradientUnits='userSpaceOnUse'>
+                    <stop stopColor='white' />
+                    <stop offset='1' stopColor='white' stop-Opacity='0.26' />
                   </linearGradient>
                 </defs>
               </svg>
