@@ -51,7 +51,7 @@ const Home = () => {
               <Image src='/assets/product.png' alt='Product image' fill />
 
               <svg
-                className='absolute z-20 -bottom-10 left-1/2 -translate-x-1/2 backdrop-blur-md shape'
+                className='absolute z-20 -bottom-10 left-1/2 -translate-x-1/2 -webkit-backdrop-blur-12 shape'
                 width='209'
                 height='93'
                 viewBox='0 0 209 93'
@@ -153,7 +153,7 @@ const Home = () => {
                 width={112}
                 height={112}
               />
-              <div className='w-[8rem] h-[8rem] md:backdrop-blur-sm rounded-full overflow-clip flex justify-center items-center'>
+              <div className='w-[8rem] h-[8rem] md:-webkit-backdrop-blur-4 rounded-full overflow-clip flex justify-center items-center'>
                 <span className='text-neutral-500 font-bold text-5xl transition-all duration-200'>
                   15
                 </span>
