@@ -1,12 +1,9 @@
-import Image from 'next/image'
-import { Space_Grotesk } from 'next/font/google'
-import Aside from '@/components/aside-sect/aside'
-import Main from '@/components/main-sect/main'
-
+import Aside from "@/components/aside-sect/aside"
+import Main from "@/components/main-sect/main"
 
 const Home = () => {
   return (
-    <Main/>
+     <Main/>
   )
 }
 
